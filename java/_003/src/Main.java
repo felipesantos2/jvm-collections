@@ -1,7 +1,9 @@
-
+import java.lang.*;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
         int[] arr = { 1,2,3,4 };
 
         for (int i = 0; i < arr.length ; i++) {
@@ -10,6 +12,7 @@ public class Main {
 
         /*
         * Java collections framework
+        *
         * Conjunto de estruturas pré-prontas para armazenamento de objetos
         * Uma coleção também é um objeto
         * Algumas operações
@@ -28,16 +31,21 @@ public class Main {
         *
         */
 
+        System.out.println("------------------COLLECTIONS ARRAYLIST-----------------");
+
         ArrayList<String> lista = new ArrayList<String>();
 
         lista.add("Felipe");
         lista.add("Miguel");
         lista.add("Edileia");
-        lista.add( 6, "Florsina");
-
-        System.out.println("------------------COLLECTIONS-----------------");
+        lista.add( 3, "Florsina");
+        lista.add("Lourivaldo");
 
         System.out.println(lista.size());
+
+        System.out.println(lista.get(4));
+
+        System.out.println(lista.toArray());
 
     }
 }
